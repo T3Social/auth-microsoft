@@ -81,9 +81,7 @@ class MicrosoftAuth extends Live
     protected function defaultNormalizeUserAttributeMap()
     {
         return [
-            'id' => function ($attributes) {
-                return $attributes['sub'];
-            },
+            'id' => fn($attributes) => $attributes['sub'],
             'username' => 'displayName',
             'firstname' => function ($attributes) {
                 if (!isset($attributes['given_name'])) {
@@ -100,9 +98,7 @@ class MicrosoftAuth extends Live
                 return $attributes['family_name'];
             },
             'title' => 'tagline',
-            'email' => function ($attributes) {
-                return $attributes['email'];
-            },
+            'email' => fn($attributes) => $attributes['email'],
         ];
     }
 }
