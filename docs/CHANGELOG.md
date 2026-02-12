@@ -4,6 +4,7 @@ Changelog
 1.1.0 (Unreleased)
 -------------------------
 - Fix: Update module resources path
+- Fix #10: New account registration fails when a profile field (other than first and last name) is required
 
 1.0.0 (Unreleased)
 ------------------
