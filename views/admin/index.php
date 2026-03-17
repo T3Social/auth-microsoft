@@ -16,7 +16,7 @@ use humhubContrib\auth\microsoft\models\ConfigureForm;
             <p>
                 <?= Link::primary(Yii::t('AuthMicrosoftModule.base', 'Microsoft Documentation'))
                     ->link('https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-v2-protocols#app-registration')
-                    ->blank()
+                    ->blank()->loader(false)
                     ->right()->sm() ?>
                 <?= Yii::t('AuthMicrosoftModule.base', 'Please follow the instructions to create the required <strong>client</strong> credentials.'); ?>
                 <br/>
