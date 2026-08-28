@@ -29,13 +29,11 @@ class MicrosoftAuth extends Live
      */
     public function init()
     {
-        if ($this->scope === null) {
-            $this->scope = implode(' ', [
-                'email',
-                'openid',
-                'profile',
-            ]);
-        }
+        $this->scope ??= implode(' ', [
+            'email',
+            'openid',
+            'profile',
+        ]);
     }
 
     /**

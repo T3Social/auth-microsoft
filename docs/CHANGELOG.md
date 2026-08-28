@@ -5,6 +5,7 @@ Changelog
 -------------------------
 - Fix: Update module resources path
 - Fix #10: New account registration fails when a profile field (other than first and last name) is required
+- Enh: Automated code refactoring for HumHub 1.18 using Rector
 
 1.0.0 (Unreleased)
 ------------------
